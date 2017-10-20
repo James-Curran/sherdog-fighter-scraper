@@ -84,7 +84,7 @@ class Scraper(object):
         except AttributeError:
             locality = None
 
-        # get the fighter's locality
+        # get the fighter's nationality
         try:
             nationality = soup.find('strong', {'itemprop': 'nationality'}).contents[0]
         except AttributeError:
